@@ -1,0 +1,1101 @@
+{
+  "timestamp": "2025-11-12 19:32:57",
+  "total_questions": 30,
+  "results": {
+    "without_rewriting": [
+      {
+        "question_id": 1,
+        "question": "RemoteView 접속 시 10050 에러가 발생합니다",
+        "use_rewriting": false,
+        "elapsed_time": 15.07,
+        "document_count": 8,
+        "unique_document_count": 8,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 1234,
+        "success": true
+      },
+      {
+        "question_id": 2,
+        "question": "RCXERR_50001 오류 해결 방법 알려주세요",
+        "use_rewriting": false,
+        "elapsed_time": 23.57,
+        "document_count": 3,
+        "unique_document_count": 3,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 1049,
+        "success": true
+      },
+      {
+        "question_id": 3,
+        "question": "RemoteView 설치는 어떻게 하나요?",
+        "use_rewriting": false,
+        "elapsed_time": 25.55,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.7762,
+        "top5_scores": [
+          0.8063,
+          0.7754,
+          0.7703,
+          0.7679,
+          0.7613
+        ],
+        "answer_length": 1340,
+        "success": true
+      },
+      {
+        "question_id": 4,
+        "question": "RCMP 앱 설치 방법",
+        "use_rewriting": false,
+        "elapsed_time": 19.87,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.705,
+        "top5_scores": [
+          0.7393,
+          0.7003,
+          0.6999,
+          0.6939,
+          0.6917
+        ],
+        "answer_length": 1077,
+        "success": true
+      },
+      {
+        "question_id": 5,
+        "question": "RemoteView로 원격 접속하는 방법",
+        "use_rewriting": false,
+        "elapsed_time": 18.34,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.7392,
+        "top5_scores": [
+          0.7529,
+          0.7394,
+          0.736,
+          0.7347,
+          0.7328
+        ],
+        "answer_length": 1096,
+        "success": true
+      },
+      {
+        "question_id": 6,
+        "question": "화면 공유 기능 사용법",
+        "use_rewriting": false,
+        "elapsed_time": 28.04,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6858,
+        "top5_scores": [
+          0.6889,
+          0.6884,
+          0.6847,
+          0.6846,
+          0.6825
+        ],
+        "answer_length": 954,
+        "success": true
+      },
+      {
+        "question_id": 7,
+        "question": "RemoteView 연결이 끊기는 문제",
+        "use_rewriting": false,
+        "elapsed_time": 31.59,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.9,
+        "top5_scores": [
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "answer_length": 1463,
+        "success": true
+      },
+      {
+        "question_id": 8,
+        "question": "로그인이 계속 실패합니다",
+        "use_rewriting": false,
+        "elapsed_time": 39.09,
+        "document_count": 12,
+        "unique_document_count": 12,
+        "avg_relevance_score": 0.6982,
+        "top5_scores": [
+          0.7221,
+          0.6981,
+          0.694,
+          0.6901,
+          0.6865
+        ],
+        "answer_length": 1618,
+        "success": true
+      },
+      {
+        "question_id": 9,
+        "question": "파일 전송 기능이 있나요?",
+        "use_rewriting": false,
+        "elapsed_time": 19.32,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6902,
+        "top5_scores": [
+          0.702,
+          0.6927,
+          0.6882,
+          0.6847,
+          0.6834
+        ],
+        "answer_length": 977,
+        "success": true
+      },
+      {
+        "question_id": 10,
+        "question": "모바일에서도 원격 제어 가능한가요?",
+        "use_rewriting": false,
+        "elapsed_time": 22.53,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.7051,
+        "top5_scores": [
+          0.7351,
+          0.7077,
+          0.6967,
+          0.6934,
+          0.6928
+        ],
+        "answer_length": 1189,
+        "success": true
+      },
+      {
+        "question_id": 11,
+        "question": "75000 에러코드 원인",
+        "use_rewriting": false,
+        "elapsed_time": 13.52,
+        "document_count": 6,
+        "unique_document_count": 6,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 990,
+        "success": true
+      },
+      {
+        "question_id": 12,
+        "question": "방화벽 설정 방법 알려주세요",
+        "use_rewriting": false,
+        "elapsed_time": 24.24,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6012,
+        "top5_scores": [
+          0.6208,
+          0.6051,
+          0.5936,
+          0.5934,
+          0.5931
+        ],
+        "answer_length": 1224,
+        "success": true
+      },
+      {
+        "question_id": 13,
+        "question": "포트 설정은 어떻게 하나요?",
+        "use_rewriting": false,
+        "elapsed_time": 25.57,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6724,
+        "top5_scores": [
+          0.7095,
+          0.6662,
+          0.6646,
+          0.6631,
+          0.6588
+        ],
+        "answer_length": 1167,
+        "success": true
+      },
+      {
+        "question_id": 14,
+        "question": "화면이 검은색으로 나옵니다",
+        "use_rewriting": false,
+        "elapsed_time": 49.32,
+        "document_count": 13,
+        "unique_document_count": 13,
+        "avg_relevance_score": 0.6917,
+        "top5_scores": [
+          0.7148,
+          0.6911,
+          0.6843,
+          0.6842,
+          0.6841
+        ],
+        "answer_length": 1874,
+        "success": true
+      },
+      {
+        "question_id": 15,
+        "question": "카메라 권한 문제 해결",
+        "use_rewriting": false,
+        "elapsed_time": 24.93,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.7003,
+        "top5_scores": [
+          0.7103,
+          0.7035,
+          0.6984,
+          0.6949,
+          0.6945
+        ],
+        "answer_length": 986,
+        "success": true
+      },
+      {
+        "question_id": 16,
+        "question": "원격 재부팅 기능 사용 방법",
+        "use_rewriting": false,
+        "elapsed_time": 23.44,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.7045,
+        "top5_scores": [
+          0.7225,
+          0.7207,
+          0.6944,
+          0.6935,
+          0.6914
+        ],
+        "answer_length": 999,
+        "success": true
+      },
+      {
+        "question_id": 17,
+        "question": "채팅 기능은 어떻게 쓰나요?",
+        "use_rewriting": false,
+        "elapsed_time": 28.3,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6586,
+        "top5_scores": [
+          0.6773,
+          0.6649,
+          0.6514,
+          0.6505,
+          0.6489
+        ],
+        "answer_length": 1147,
+        "success": true
+      },
+      {
+        "question_id": 18,
+        "question": "녹화 기능이 있나요?",
+        "use_rewriting": false,
+        "elapsed_time": 36.14,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6752,
+        "top5_scores": [
+          0.6842,
+          0.6842,
+          0.6747,
+          0.6688,
+          0.6643
+        ],
+        "answer_length": 989,
+        "success": true
+      },
+      {
+        "question_id": 19,
+        "question": "iOS에서 앱 설치 방법",
+        "use_rewriting": false,
+        "elapsed_time": 42.34,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6142,
+        "top5_scores": [
+          0.6579,
+          0.6113,
+          0.6062,
+          0.6019,
+          0.5938
+        ],
+        "answer_length": 1247,
+        "success": true
+      },
+      {
+        "question_id": 20,
+        "question": "Mac에서 RemoteView 설치",
+        "use_rewriting": false,
+        "elapsed_time": 26.4,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7285,
+        "top5_scores": [
+          0.7411,
+          0.7288,
+          0.7267,
+          0.7231,
+          0.7227
+        ],
+        "answer_length": 1176,
+        "success": true
+      },
+      {
+        "question_id": 21,
+        "question": "연결 실패 에러 10001",
+        "use_rewriting": false,
+        "elapsed_time": 11.41,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 838,
+        "success": true
+      },
+      {
+        "question_id": 22,
+        "question": "소리가 안들려요",
+        "use_rewriting": false,
+        "elapsed_time": 38.13,
+        "document_count": 7,
+        "unique_document_count": 7,
+        "avg_relevance_score": 0.6557,
+        "top5_scores": [
+          0.6735,
+          0.6687,
+          0.6557,
+          0.6418,
+          0.6388
+        ],
+        "answer_length": 1254,
+        "success": true
+      },
+      {
+        "question_id": 23,
+        "question": "마우스 클릭이 안됩니다",
+        "use_rewriting": false,
+        "elapsed_time": 58.93,
+        "document_count": 13,
+        "unique_document_count": 13,
+        "avg_relevance_score": 0.6931,
+        "top5_scores": [
+          0.7137,
+          0.7102,
+          0.693,
+          0.6751,
+          0.6735
+        ],
+        "answer_length": 1957,
+        "success": true
+      },
+      {
+        "question_id": 24,
+        "question": "프록시 설정 방법",
+        "use_rewriting": false,
+        "elapsed_time": 31.66,
+        "document_count": 5,
+        "unique_document_count": 5,
+        "avg_relevance_score": 0.6622,
+        "top5_scores": [
+          0.7006,
+          0.6604,
+          0.6524,
+          0.6492,
+          0.6485
+        ],
+        "answer_length": 1101,
+        "success": true
+      },
+      {
+        "question_id": 25,
+        "question": "보안 설정 변경하는 법",
+        "use_rewriting": false,
+        "elapsed_time": 34.84,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6759,
+        "top5_scores": [
+          0.682,
+          0.6758,
+          0.6748,
+          0.6738,
+          0.6734
+        ],
+        "answer_length": 863,
+        "success": true
+      },
+      {
+        "question_id": 26,
+        "question": "여러 대 동시 접속 방법",
+        "use_rewriting": false,
+        "elapsed_time": 36.18,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6382,
+        "top5_scores": [
+          0.643,
+          0.6404,
+          0.6379,
+          0.6373,
+          0.6325
+        ],
+        "answer_length": 1089,
+        "success": true
+      },
+      {
+        "question_id": 27,
+        "question": "SSO 로그인 지원하나요?",
+        "use_rewriting": false,
+        "elapsed_time": 33.32,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6661,
+        "top5_scores": [
+          0.6748,
+          0.6687,
+          0.6655,
+          0.6608,
+          0.6607
+        ],
+        "answer_length": 966,
+        "success": true
+      },
+      {
+        "question_id": 28,
+        "question": "약관 동의 후 앱이 종료됩니다",
+        "use_rewriting": false,
+        "elapsed_time": 55.56,
+        "document_count": 13,
+        "unique_document_count": 13,
+        "avg_relevance_score": 0.6967,
+        "top5_scores": [
+          0.7059,
+          0.7017,
+          0.6941,
+          0.6934,
+          0.6882
+        ],
+        "answer_length": 2109,
+        "success": true
+      },
+      {
+        "question_id": 29,
+        "question": "RVS 에러 50002 해결 방법",
+        "use_rewriting": false,
+        "elapsed_time": 23.35,
+        "document_count": 1,
+        "unique_document_count": 1,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0
+        ],
+        "answer_length": 1214,
+        "success": true
+      },
+      {
+        "question_id": 30,
+        "question": "클립보드 공유 기능 사용법",
+        "use_rewriting": false,
+        "elapsed_time": 23.63,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6479,
+        "top5_scores": [
+          0.6614,
+          0.6534,
+          0.6421,
+          0.6416,
+          0.6408
+        ],
+        "answer_length": 1004,
+        "success": true
+      }
+    ],
+    "with_rewriting": [
+      {
+        "question_id": 1,
+        "question": "RemoteView 접속 시 10050 에러가 발생합니다",
+        "use_rewriting": true,
+        "elapsed_time": 15.22,
+        "document_count": 8,
+        "unique_document_count": 8,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 1201,
+        "success": true
+      },
+      {
+        "question_id": 2,
+        "question": "RCXERR_50001 오류 해결 방법 알려주세요",
+        "use_rewriting": true,
+        "elapsed_time": 25.18,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 16.2107,
+        "top5_scores": [
+          16.3565,
+          16.3565,
+          16.1477,
+          16.1477,
+          16.0453
+        ],
+        "answer_length": 979,
+        "success": true
+      },
+      {
+        "question_id": 3,
+        "question": "RemoteView 설치는 어떻게 하나요?",
+        "use_rewriting": true,
+        "elapsed_time": 33.63,
+        "document_count": 7,
+        "unique_document_count": 7,
+        "avg_relevance_score": 0.7762,
+        "top5_scores": [
+          0.8063,
+          0.7754,
+          0.7703,
+          0.7679,
+          0.7613
+        ],
+        "answer_length": 1417,
+        "success": true
+      },
+      {
+        "question_id": 4,
+        "question": "RCMP 앱 설치 방법",
+        "use_rewriting": true,
+        "elapsed_time": 29.0,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7124,
+        "top5_scores": [
+          0.7393,
+          0.7112,
+          0.711,
+          0.7003,
+          0.6999
+        ],
+        "answer_length": 1125,
+        "success": true
+      },
+      {
+        "question_id": 5,
+        "question": "RemoteView로 원격 접속하는 방법",
+        "use_rewriting": true,
+        "elapsed_time": 22.59,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.742,
+        "top5_scores": [
+          0.7529,
+          0.7426,
+          0.7394,
+          0.7389,
+          0.7361
+        ],
+        "answer_length": 1356,
+        "success": true
+      },
+      {
+        "question_id": 6,
+        "question": "화면 공유 기능 사용법",
+        "use_rewriting": true,
+        "elapsed_time": 24.1,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7051,
+        "top5_scores": [
+          0.716,
+          0.711,
+          0.7005,
+          0.6991,
+          0.6991
+        ],
+        "answer_length": 1052,
+        "success": true
+      },
+      {
+        "question_id": 7,
+        "question": "RemoteView 연결이 끊기는 문제",
+        "use_rewriting": true,
+        "elapsed_time": 28.26,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7574,
+        "top5_scores": [
+          0.7816,
+          0.7528,
+          0.7524,
+          0.7505,
+          0.7499
+        ],
+        "answer_length": 1214,
+        "success": true
+      },
+      {
+        "question_id": 8,
+        "question": "로그인이 계속 실패합니다",
+        "use_rewriting": true,
+        "elapsed_time": 43.65,
+        "document_count": 20,
+        "unique_document_count": 20,
+        "avg_relevance_score": 0.7081,
+        "top5_scores": [
+          0.7221,
+          0.7096,
+          0.7096,
+          0.7012,
+          0.6981
+        ],
+        "answer_length": 2396,
+        "success": true
+      },
+      {
+        "question_id": 9,
+        "question": "파일 전송 기능이 있나요?",
+        "use_rewriting": true,
+        "elapsed_time": 23.37,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6902,
+        "top5_scores": [
+          0.702,
+          0.6927,
+          0.6882,
+          0.6847,
+          0.6834
+        ],
+        "answer_length": 1298,
+        "success": true
+      },
+      {
+        "question_id": 10,
+        "question": "모바일에서도 원격 제어 가능한가요?",
+        "use_rewriting": true,
+        "elapsed_time": 34.51,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7059,
+        "top5_scores": [
+          0.7391,
+          0.7077,
+          0.6967,
+          0.6934,
+          0.6928
+        ],
+        "answer_length": 1039,
+        "success": true
+      },
+      {
+        "question_id": 11,
+        "question": "75000 에러코드 원인",
+        "use_rewriting": true,
+        "elapsed_time": 13.5,
+        "document_count": 6,
+        "unique_document_count": 6,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 1024,
+        "success": true
+      },
+      {
+        "question_id": 12,
+        "question": "방화벽 설정 방법 알려주세요",
+        "use_rewriting": true,
+        "elapsed_time": 25.07,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6012,
+        "top5_scores": [
+          0.6208,
+          0.6051,
+          0.5936,
+          0.5934,
+          0.5931
+        ],
+        "answer_length": 1281,
+        "success": true
+      },
+      {
+        "question_id": 13,
+        "question": "포트 설정은 어떻게 하나요?",
+        "use_rewriting": true,
+        "elapsed_time": 31.74,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.672,
+        "top5_scores": [
+          0.7055,
+          0.6662,
+          0.6646,
+          0.6631,
+          0.6606
+        ],
+        "answer_length": 1002,
+        "success": true
+      },
+      {
+        "question_id": 14,
+        "question": "화면이 검은색으로 나옵니다",
+        "use_rewriting": true,
+        "elapsed_time": 53.46,
+        "document_count": 20,
+        "unique_document_count": 20,
+        "avg_relevance_score": 0.7056,
+        "top5_scores": [
+          0.7212,
+          0.7151,
+          0.7043,
+          0.6957,
+          0.6915
+        ],
+        "answer_length": 2119,
+        "success": true
+      },
+      {
+        "question_id": 15,
+        "question": "카메라 권한 문제 해결",
+        "use_rewriting": true,
+        "elapsed_time": 32.72,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7003,
+        "top5_scores": [
+          0.7103,
+          0.7035,
+          0.6984,
+          0.6949,
+          0.6945
+        ],
+        "answer_length": 1048,
+        "success": true
+      },
+      {
+        "question_id": 16,
+        "question": "원격 재부팅 기능 사용 방법",
+        "use_rewriting": true,
+        "elapsed_time": 46.55,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7045,
+        "top5_scores": [
+          0.7225,
+          0.7207,
+          0.6944,
+          0.6935,
+          0.6914
+        ],
+        "answer_length": 1060,
+        "success": true
+      },
+      {
+        "question_id": 17,
+        "question": "채팅 기능은 어떻게 쓰나요?",
+        "use_rewriting": true,
+        "elapsed_time": 28.12,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6714,
+        "top5_scores": [
+          0.6859,
+          0.6773,
+          0.6751,
+          0.6649,
+          0.654
+        ],
+        "answer_length": 946,
+        "success": true
+      },
+      {
+        "question_id": 18,
+        "question": "녹화 기능이 있나요?",
+        "use_rewriting": true,
+        "elapsed_time": 25.76,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6795,
+        "top5_scores": [
+          0.6842,
+          0.6842,
+          0.6813,
+          0.6747,
+          0.673
+        ],
+        "answer_length": 865,
+        "success": true
+      },
+      {
+        "question_id": 19,
+        "question": "iOS에서 앱 설치 방법",
+        "use_rewriting": true,
+        "elapsed_time": 35.1,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6429,
+        "top5_scores": [
+          0.6579,
+          0.6523,
+          0.6396,
+          0.6386,
+          0.6259
+        ],
+        "answer_length": 1008,
+        "success": true
+      },
+      {
+        "question_id": 20,
+        "question": "Mac에서 RemoteView 설치",
+        "use_rewriting": true,
+        "elapsed_time": 14.9,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.7303,
+        "top5_scores": [
+          0.7411,
+          0.7314,
+          0.7288,
+          0.7267,
+          0.7233
+        ],
+        "answer_length": 1000,
+        "success": true
+      },
+      {
+        "question_id": 21,
+        "question": "연결 실패 에러 10001",
+        "use_rewriting": true,
+        "elapsed_time": 13.37,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answer_length": 832,
+        "success": true
+      },
+      {
+        "question_id": 22,
+        "question": "소리가 안들려요",
+        "use_rewriting": true,
+        "elapsed_time": 24.11,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6625,
+        "top5_scores": [
+          0.6735,
+          0.6687,
+          0.6577,
+          0.6571,
+          0.6557
+        ],
+        "answer_length": 1181,
+        "success": true
+      },
+      {
+        "question_id": 23,
+        "question": "마우스 클릭이 안됩니다",
+        "use_rewriting": true,
+        "elapsed_time": 42.35,
+        "document_count": 20,
+        "unique_document_count": 20,
+        "avg_relevance_score": 0.692,
+        "top5_scores": [
+          0.7017,
+          0.6994,
+          0.6975,
+          0.6863,
+          0.6751
+        ],
+        "answer_length": 2174,
+        "success": true
+      },
+      {
+        "question_id": 24,
+        "question": "프록시 설정 방법",
+        "use_rewriting": true,
+        "elapsed_time": 29.16,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6662,
+        "top5_scores": [
+          0.7006,
+          0.662,
+          0.6604,
+          0.6557,
+          0.6524
+        ],
+        "answer_length": 1159,
+        "success": true
+      },
+      {
+        "question_id": 25,
+        "question": "보안 설정 변경하는 법",
+        "use_rewriting": true,
+        "elapsed_time": 24.51,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6759,
+        "top5_scores": [
+          0.682,
+          0.6758,
+          0.6748,
+          0.6738,
+          0.6734
+        ],
+        "answer_length": 918,
+        "success": true
+      },
+      {
+        "question_id": 26,
+        "question": "여러 대 동시 접속 방법",
+        "use_rewriting": true,
+        "elapsed_time": 31.15,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6382,
+        "top5_scores": [
+          0.643,
+          0.6404,
+          0.6379,
+          0.6373,
+          0.6325
+        ],
+        "answer_length": 1119,
+        "success": true
+      },
+      {
+        "question_id": 27,
+        "question": "SSO 로그인 지원하나요?",
+        "use_rewriting": true,
+        "elapsed_time": 38.08,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6661,
+        "top5_scores": [
+          0.6748,
+          0.6687,
+          0.6655,
+          0.6608,
+          0.6607
+        ],
+        "answer_length": 1246,
+        "success": true
+      },
+      {
+        "question_id": 28,
+        "question": "약관 동의 후 앱이 종료됩니다",
+        "use_rewriting": true,
+        "elapsed_time": 40.45,
+        "document_count": 20,
+        "unique_document_count": 20,
+        "avg_relevance_score": 0.9,
+        "top5_scores": [
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "answer_length": 1374,
+        "success": true
+      },
+      {
+        "question_id": 29,
+        "question": "RVS 에러 50002 해결 방법",
+        "use_rewriting": true,
+        "elapsed_time": 22.72,
+        "document_count": 1,
+        "unique_document_count": 1,
+        "avg_relevance_score": 1.0,
+        "top5_scores": [
+          1.0
+        ],
+        "answer_length": 1033,
+        "success": true
+      },
+      {
+        "question_id": 30,
+        "question": "클립보드 공유 기능 사용법",
+        "use_rewriting": true,
+        "elapsed_time": 34.47,
+        "document_count": 10,
+        "unique_document_count": 10,
+        "avg_relevance_score": 0.6632,
+        "top5_scores": [
+          0.6671,
+          0.6654,
+          0.6615,
+          0.6614,
+          0.6604
+        ],
+        "answer_length": 1040,
+        "success": true
+      }
+    ]
+  },
+  "statistics": {
+    "without_rewriting": {
+      "avg_document_count": 8.37,
+      "avg_unique_document_count": 8.37,
+      "avg_relevance_score": 0.7427,
+      "avg_elapsed_time": 29.47,
+      "success_rate": 100.0
+    },
+    "with_rewriting": {
+      "avg_document_count": 10.73,
+      "avg_unique_document_count": 10.73,
+      "avg_relevance_score": 1.256,
+      "avg_elapsed_time": 29.56,
+      "success_rate": 100.0
+    },
+    "improvement": {
+      "document_count": 28.2,
+      "relevance_score": 69.1,
+      "time_overhead": 0.3
+    }
+  }
+}
