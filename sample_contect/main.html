@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>테스트클라이언트(nodejs)</title>
+<meta http-equiv="cache-control" content="no-cache" />
+<link rel="stylesheet" type="text/css" href="default.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script src="jquery-1.9.1.js"></script>
+<script src="sha512.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body leftmargin="0" topmargin="0">
+<br>
+&nbsp;<b>테스트클라이언트(socket.io)</b><br>
+<br>
+<form name=input_form id=input_form method="post">
+<input type='hidden' name='option' id='option' value='0'>
+<input type='hidden' name='usertype' id='usertype' value='M'>
+<input type='hidden' name='server_ip' id='server_ip' value='222.231.0.74'>
+
+<table width="100%" border="0" cellpadding="5" cellspacing="5">
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+	<td>
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		<td>
+			<DIV id='LOGIN_DIV' style='display:;border:solid 0'>
+			<img src='left_dot01.gif'>
+			<b>로긴정보입력 : </b>&nbsp;
+			<b>회사아이디 : </b><input type=text size=10 name='company_id' id='company_id' value=''>&nbsp;
+			<b>상담원아이디 : </b><input type=text size=10 name='userid' id='userid' value=''>&nbsp;
+			<b>내선 : </b><input type=text size=10 name='exten' id='exten' value=''>
+			<b>패스워드 : </b><input type='password' size=15 name='passwd' id='passwd' value=''>
+			</DIV>
+		</td>
+		<td>
+			<DIV id='STATUS_DIV' style='display:none;border:solid 0'>
+			<table border="1" cellpadding="0" cellspacing="0">
+			<tr>
+			<td id='phonestatus' align=center style='width:80px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000;'>
+				전화기상태
+			</td>
+			<td id='forwardstatus' align=center style='width:300px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000;'>
+				착신전환상태
+			</td>
+			<td id='record_type' align=center style='width:120px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000;'>
+				녹취형태
+			</td>
+			</tr>
+			</table>
+			</DIV>
+		</td>
+		<td width=5></td>
+		<td>
+			<input name="login_btn" id="login_btn" type="button" style="width:60px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A" value='로그인'>
+			<input name="logout_btn" id="logout_btn" type="button" style="width:60px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A" value='로그아웃'>
+		</td>
+		<td width=5></td>
+		<td>
+		</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+	<td>
+<img src='left_dot01.gif'><b>상담원상태:</b>
+		<input type=button name='memberstatus0' id='memberstatus0' value='대기(0)' style="width:70px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000">
+		<input type=button name='memberstatus1' id='memberstatus1' value='상담중(1)' style="width:70px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000">
+		<input type=button name='memberstatus2' id='memberstatus2' value='후처리(2)' style="width:70px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000">
+		<input type=button name='memberstatus3' id='memberstatus3' value='휴식(3)' style="width:70px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000">
+		<input type=button name='memberstatus4' id='memberstatus4' value='식사(4)' style="width:70px; height:20px;color:#000000;background-color:#FFFFFF;border:1 solid #000000">
+	</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+	<td>
+		<img src='left_dot01.gif'>
+		<b>전화걸기 : </b>
+		고객번호: <input type=text size=15 name=number id=number value=''>&nbsp;
+		RID:<input type=text size=15 name=cid id=cid value=''>
+		<input name="dial_btn" type="button" id='dial_btn' value='전화걸기' style="width:70px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A"><br>
+</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+	<td>
+		<img src='left_dot01.gif'>
+		<b>받기,끊기,당겨받기 : </b>
+                <input name="receive_btn" id='receive_btn' type="button" value='전화받기' style="width:80px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+                <input name="hangup_btn" id='hangup_btn' type="button" value='전화끊기' style="width:80px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+                <input name="pickup_btn" id='pickup_btn' type="button" value='당겨받기' style="width:80px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+                <!--input name="pickup_btn1" id='pickup_btn1' type="button" value='당겨받기1' style="width:80px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A"-->
+</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+        <td align=left >
+<img src='left_dot01.gif'>
+<b>돌려주기(내선) : </b><input type=text size=15 name='transfer_num' id='transfer_num' value=''>
+<input name="redirect_btn" type="button" id="redirect_btn" value='돌려주기(BLIND)' style="width:140px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+<input name="attended_btn" type="button" id='attended_btn' value='돌려주기(ATTENDED)' style="width:140px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+<input name="attended_hangup_btn" id='attended_hangup_btn' type="button" value='돌려준전화끊기' style="width:120px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+        <td align=left >
+<img src='left_dot01.gif'>
+<b>돌려주기(외부로) : </b><input type=text size=15 name='transferout_num' id='transferout_num' value=''>
+<input name="redirectout_btn" type="button" id='redirectout_btn' value='돌려주기(BLIND)' style="width:140px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+<input name="attendedout_btn" type="button" id='attendedout_btn' value='돌려주기(ATTENDED)' style="width:140px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+<tr height=25>
+        <td align=left >
+		<img src='left_dot01.gif'>
+		<b>돌려주기(헌트번호, 대표번호) : </b>
+		<input type=text size=15 name='redirecthunt_num' id='redirecthunt_num' value=''>
+		<input name="redirecthunt_btn" type="button" id="redirecthunt_btn" value='돌려주기(BLIND)' style="width:140px; height:20px;color:#FFFFFF;background-color:#51881A;border:0 solid #51881A">
+</td>
+</tr>
+<tr height=1><td bgcolor=lightgray></td></tr>
+</table>
+</form>
+<br>
+<iframe  width=100% height='560' frameborder='1' scrolling="auto" id='socket_frame' name='socket_frame' src='socket_frame.html'></iframe>
+</body>
+</html>
+

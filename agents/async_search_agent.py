@@ -89,7 +89,8 @@ class AsyncSearchAgent:
         question: str,
         session_id: Optional[str] = None,
         max_iterations: Optional[int] = None,
-        debug: bool = False
+        debug: bool = False,
+        customer_mode: bool = False
     ) -> Dict[str, Any]:
         """
         Execute async autonomous search using ReAct loop.
@@ -99,6 +100,7 @@ class AsyncSearchAgent:
             session_id: Session ID (auto-generated if None)
             max_iterations: Maximum ReAct iterations
             debug: Include debug information
+            customer_mode: If True, generate customer-friendly response (no doc refs)
 
         Returns:
             Search result with answer, sources, and optional debug info
@@ -238,7 +240,8 @@ class AsyncSearchAgent:
         answer, validation = await self._generate_answer(
             question,
             compiled_docs,
-            is_list_request
+            is_list_request,
+            customer_mode
         )
 
         execution_time = time.time() - start_time
@@ -449,21 +452,57 @@ What should I do next?"""
         self,
         question: str,
         documents: List[Dict],
-        is_list_request: bool = False
+        is_list_request: bool = False,
+        customer_mode: bool = False
     ) -> Tuple[str, Dict[str, Any]]:
         """Generate final answer using async LLM."""
         # Build context
         context_parts = []
         for i, doc in enumerate(documents[:10], 1):
             text = doc.get('text', '')[:1000]
-            source = doc.get('metadata', {}).get('file_name', 'Unknown')
-            score = doc.get('score', 0)
-            context_parts.append(f"[문서 {i}] (출처: {source}, 관련도: {score:.2f})\n{text}\n")
+            if customer_mode:
+                # 고객용: 문서 번호 없이 내용만
+                context_parts.append(f"{text}\n")
+            else:
+                # 내부용: 출처 정보 포함
+                source = doc.get('metadata', {}).get('file_name', 'Unknown')
+                score = doc.get('score', 0)
+                context_parts.append(f"[문서 {i}] (출처: {source}, 관련도: {score:.2f})\n{text}\n")
 
         context = "\n".join(context_parts)
         context = self._truncate_context(context, max_tokens=6000)
 
-        system_prompt = """당신은 IT 서버, 네트워크, 개발 전문가입니다.
+        if customer_mode:
+            # 고객용 프롬프트: 친절하고 가독성 좋게
+            system_prompt = """당신은 친절한 기술 지원 상담원입니다.
+고객의 질문에 명확하고 이해하기 쉽게 답변하세요.
+
+답변 작성 원칙:
+1. **문서 참조 번호 절대 표시 금지** - "(문서 1)", "[문서 2]" 등 사용하지 않음
+2. **친절하고 공손한 어투** 사용
+3. **마크다운 형식**으로 가독성 있게 작성:
+   - 중요 내용은 **굵게** 표시
+   - 단계별 설명은 번호 목록 사용
+   - 관련 정보는 줄바꿈으로 구분
+4. 해결 방법이 여러 개면 **가장 쉬운 방법부터** 안내
+5. 문서에 없는 내용은 추측하지 말고, 추가 문의 안내
+
+예시 형식:
+안녕하세요! 문의하신 내용에 대해 안내드립니다.
+
+**원인**
+문제가 발생하는 주요 원인은 다음과 같습니다:
+- 첫 번째 원인
+- 두 번째 원인
+
+**해결 방법**
+1. 첫 번째 단계
+2. 두 번째 단계
+
+추가 문의사항이 있으시면 말씀해 주세요."""
+        else:
+            # 내부용 프롬프트: 문서 기반 상세 답변
+            system_prompt = """당신은 IT 서버, 네트워크, 개발 전문가입니다.
 제공된 사내 문서를 바탕으로 질문에 정확하게 답변하세요.
 
 핵심 원칙:

@@ -58,12 +58,19 @@ class Settings:
     MAX_DOCUMENTS: int = int(os.getenv("MAX_DOCUMENTS", "10"))
 
     # Server
-    PORT: int = int(os.getenv("PORT", "8001"))
+    PORT: int = int(os.getenv("PORT", "8003"))
     HOST: str = os.getenv("HOST", "0.0.0.0")
 
     # Logging
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
     LOG_DIR: str = os.getenv("LOG_DIR", "logs")
+
+    # Chat Settings
+    CHAT_DOMAIN: str = os.getenv("CHAT_DOMAIN", "https://chat.example.com")
+    CHAT_TOKEN_EXPIRE_HOURS: int = int(os.getenv("CHAT_TOKEN_EXPIRE_HOURS", "24"))
+    CALLBACK_TRIGGER_COUNT: int = int(os.getenv("CALLBACK_TRIGGER_COUNT", "5"))
+    EXTERNAL_CALLBACK_URL: str = os.getenv("EXTERNAL_CALLBACK_URL", "")
+    SESSION_TIMEOUT_MINUTES: int = int(os.getenv("SESSION_TIMEOUT_MINUTES", "30"))
 
     # Tool Enable/Disable Settings
     # MariaDB Tools

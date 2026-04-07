@@ -57,3 +57,7 @@ temp_*
 *.pid
 .api.pid
 .ui.pid
+
+# Node
+node_modules/
+*.xlsx

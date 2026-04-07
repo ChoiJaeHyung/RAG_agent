@@ -1,0 +1,17 @@
+{
+  "name": "r-agent-callcenter",
+  "version": "1.0.0",
+  "description": "LG U+ 클콜 LITE Socket.io 클라이언트",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.6.5",
+    "socket.io-client": "^2.5.0",
+    "uuid": "^9.0.1"
+  }
+}

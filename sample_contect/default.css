@@ -1,0 +1,76 @@
+body,p, table,form,input,textarea,select {font-family:돋움;font-size:12px;color:#2D2D2D;}
+ 
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+a:hover{text-decoration: none;}
+ 
+a.m:link{color:#ffffff; font-weight:bold;text-decoration:none;} /* 상단메뉴 */
+a.m:visited{color:#ffffff; font-weight:bold;text-decoration:none;}
+a.m:active{color:#ffffff; font-weight:bold;text-decoration:none;}
+a.m:hover{color:#F6DF43; font-weight:bold; text-decoration: none;}
+ 
+a.menu:link{color:#6AB121; text-decoration:none;} /* 어드민 왼쪽 메뉴 */
+a.menu:visited{color:#6AB121; text-decoration:none;}
+a.menu:active{color:#6AB121; text-decoration:none;}
+a.menu:hover{color:#6AB121; text-decoration: none;}
+ 
+html, body
+{
+        padding:0;
+        leftmargin:0;
+        topmargin:0;
+        font-size:0.9em;
+        line-height:1.2em;
+        text-align:justify;
+        font-family:Dotum, Gulim;
+        color:#3F3F3F;
+}
+ul, li, ol, li, dl, dt, dd, div, p, form, textarea, th, td
+{
+        padding:0;
+        margin:0;
+}
+ 
+table
+{
+        border-collapse:collapse;
+        border-spacing:0;
+}
+ 
+img
+{
+        border:0;
+        vertical-align:middle;
+}
+a:link
+{
+        color:#686666;
+        font-family:Dotum, Gulim;
+        font-weight:bold;
+        text-decoration:none;
+}
+ 
+a:visited
+{
+        color:#686666;
+        font-family:Dotum, Gulim;
+        font-weight:bold;
+        text-decoration:none;
+}
+ 
+a:hover
+{
+        color:#519EE1;
+        font-family:Dotum, Gulim;
+        font-weight:bold;
+        text-decoration:none;
+}
+ 
+a:active
+{
+        color:#686666;
+        font-family:Dotum, Gulim;
+        font-weight:bold;
+        text-decoration:none;
+}

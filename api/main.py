@@ -11,9 +11,12 @@ from datetime import datetime
 from typing import Dict, Optional
 from contextlib import asynccontextmanager
 
+from pathlib import Path
+
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Header, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 import httpx
 
 from api.schemas import (
@@ -23,6 +26,7 @@ from api.schemas import (
     DocumentSource, DebugInfo, ValidationInfo,
     WebhookRegistration, WebhookPayload, WebhookEventType
 )
+from api.chat_router import router as chat_router, close_db_pool, start_timeout_checker, stop_timeout_checker
 from agents.async_search_agent import AsyncSearchAgent
 from config.settings import settings
 from utils.logger import logger
@@ -63,12 +67,17 @@ async def lifespan(app: FastAPI):
         logger.error(f"❌ Initialization failed: {e}")
         # Continue anyway - will retry on first request
 
+    # Start session timeout checker
+    await start_timeout_checker()
+
     yield
 
     # Shutdown
     logger.info("🛑 Shutting down R-Agent API...")
+    await stop_timeout_checker()  # Stop timeout checker
     if _agent:
         await _agent.close()
+    await close_db_pool()  # Close chat DB pool
     logger.info("👋 R-Agent API shutdown complete")
 
 
@@ -118,6 +127,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include chat router
+app.include_router(chat_router)
+
+# Mount static files for customer chat UI
+STATIC_DIR = Path(__file__).parent.parent / "static"
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=str(STATIC_DIR), html=True), name="static")
+    logger.info(f"📁 Static files mounted from: {STATIC_DIR}")
 
 
 # ===========================================
@@ -346,18 +364,34 @@ async def submit_feedback(
     Feedback is used to improve the search system over time.
     """
     try:
-        # TODO: Store feedback in database
-        # For now, just log it
-        logger.info(
-            f"📝 Feedback received: session={request.session_id}, "
-            f"satisfaction={request.satisfaction}, relevant={request.is_relevant}"
+        # Save feedback to database (like direct mode)
+        from repositories.session_context_repository import SessionContextRepository
+        repo = SessionContextRepository()
+
+        saved = repo.update_satisfaction(
+            session_id=request.session_id,
+            satisfaction=request.satisfaction,
+            is_relevant=request.is_relevant,
+            comment=request.comment
         )
 
-        return FeedbackResponse(
-            success=True,
-            message="Feedback recorded successfully",
-            session_id=request.session_id
-        )
+        if saved:
+            logger.info(
+                f"📝 Feedback saved: session={request.session_id}, "
+                f"satisfaction={request.satisfaction}, relevant={request.is_relevant}"
+            )
+            return FeedbackResponse(
+                success=True,
+                message="Feedback recorded successfully",
+                session_id=request.session_id
+            )
+        else:
+            logger.warning(f"⚠️ Feedback not saved (session not found): {request.session_id}")
+            return FeedbackResponse(
+                success=False,
+                message="Session not found",
+                session_id=request.session_id
+            )
 
     except Exception as e:
         logger.error(f"Feedback submission failed: {e}")
